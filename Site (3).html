@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин Электротехники</title>
+    <link rel="stylesheet" href="Style (3).css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Магазин Электротехники</h1>
+      <p>Сіздің үйіңізге және кеңсеңізге арналған ең жақсы өнімдер</p>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="#smartphones" class="nav-link">Смартфоны</a></li>
+        <li><a href="#laptops" class="nav-link">Ноутбуки</a></li>
+        <li><a href="#televisions" class="nav-link">Телевизоры</a></li>
+        <li><a href="#cameras" class="nav-link">Камеры</a></li>
+        <div class="dropdown"><li><a href="#accessories" class="nav-link">Аксессуары</a></li><div class="dropdown-content" style="width: 180px;"><a href="#accessories">Наушники</a><a href="https://watchshop.kz/">Часы</a><a href="https://100gadgets.kz/aksesuary/chehli_dlya_smartfonov">Чехол</a></div>
+      </ul>
+      <button class="cart-btn">Корзина</button>
+      <div class="cart">
+        <div class="cart-items">
+          <h3>Ваши товары</h3>
+          <ul>
+            <li>Товар 1 - 500$</li>
+            <li>Товар 2 - 600$</li>
+          </ul>
+          <a href="Card.html"
+            ><button class="checkout-btn">Оформить заказ</button></a
+          >
+        </div>
+      </div>
+      <label for="sidebar-toggle" class="menu-btn">☰ Меню </label>
+
+    
+      <input type="checkbox" id="sidebar-toggle" />
+
+
+      <div class="sidebar">
+        <h2>Меню</h2>
+        <a href="#smartphones">Ұялы телефондар</a>
+        <a href="https://yabs.yandex.kz/count/WbeejI_zOoVX2LbU0cKI0EEWVSqui90j27XDD2gLIgLI2OB9TZgTJn5Jg3rXPm_wf7VkV92Thz_nUiCThZIAvqySXmOTBSr8Mg8MaRXAxO0fcmSG-QZWZATKqW4a5P8XOT1nzDukhXEyEHrLn3fR2_IcU67QiaMoza1MIG7Q1x9y1MWVo2OfGFj0Lgy0hOebQ3bV4uia-FnPbqJ8wI89TlLOzFZKpvewLAC-kb7Ze54J8LcLfbCRUazlA7xRJloPG_5eBNNUK3ngvrEdyxvlgUs3W_LAkcXQUsc0RuCtNgKx3nAKBUdGPIzhuwK3sC2bMLp2HIulpeohrR0tuxZij1gsz5HDkGCeEYPhn0xekgxNw1k-Y1rsyNFZQwJXUffj0IhW2l4C3-ZoG9OlW2q6Rv6j8aoQz8mWhhrXqDBOO_Dk8MBaoeY5hGEwpZH3fiCgb9iymXIsJHrBn-ZDBXYo1XZnrs6-LMgUP895EW2OBWqiFHqm6lMCDFLel2QNnclkE4hyVbY35AWFvh33_I-5mVrxAGpkdqjXSFyx3TdSryRWoVri39uSqqmhIZ7BjABK1KWlTrMMMBhiqViIIvSzUkktVbfqbedrPHgrAPEUxCDvHxhycFRW0_84zR3_ZW0r1SjcXfg2PVDQRwTaRl3kC5SgbKeP5cJOOiVe69OVAFzO2mKFtBJGsG4Q_3vk2NpblX1pxx1boJOaAz1Ulk0D2flMNpIz3CW2OHLD53W4b7NZTOY8B5t5ES1-fkqgbiBzdLPr0YhQpxYFW2Ds2InmKIsy6Kus5wDHQLZ06W00~2?etext=2202.5HcdR87-bOfuW04kTz3gjcouuFW1BCqiTHWRGCisfCd3YW5yZXpsaXh1bmFkbWJs.3ce6f195f08ca302819745453f7b5a042a8638fb&from=yandex.kz%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=наушники&baobab_event_id=m49mnjxi8q">Құлаққаптар</a>
+        <a href="https://yabs.yandex.kz/count/Wh0ejI_zOoVX2Lcl0XKL0ECcbCquy9WT0jub0Ze89WYaJ62tqsGAjPSxUz0dlNFdW-ny_OxN6-vmxUZq-OJcKYd-TEPIvmtDXwX8rYAhZ9-Y6zMVwetSHGtZHQs4H2LoKUTJ4aarb4Wa1GaL6I4f1Lc7h2Hmq312iWfHPu0fcmSGQR4LDb4gFxvLY0881Xr7dmO8cFMcvcLrfRFrNCh4Nx2eI1eQUI2hf03j0rc-0hGFP9CKe7qWgrU0LiKIj9ol2SGJNpOWXoDpkaazYe0z818tjRmTaAfgW2-B7f_wMLE7QjH7DseSD6eY9AkID7_UjvtZKUaplw5JwVDPvyxeZJ-XKAVjlEzRQllWOBsIBfhMNXhWs-2DLqX7s5xNsHGULMvs6q6XhY1Dv_CDausNnhFPVM3R1d006xWt4aZpXgsl8umKZ3FZnd7PEP3LTRr6t_15xB2BdnjV8mtNqsmBK05NY6TuG9S7idm1R7E-_5OH9arwHX3NtZ1eQUonURSGCN9bnCBM0LrdcY7JOHNA2KJPGM7hAUWm4yeMfFIYOiXD7GjcqcATOiHqZDxigb8bW05sVXocImDBJmUCHZqZJJqQhycbyPgxZD-LA3yy0IngomV3aEta_wKXqlYzD4GQFvU6IEFVVpbSzRKNvfRyx8Mv9KnpSww9MMxEDNqcknmYpWyhB7h7-M65HM_zra-BpZAxVDddFSLHURBdu-hJ-Z7jmGTeiLDBzDyxxekFhywM1URtku_ij-joSdbUwu-ivR5HKTdRyjA62Fbuc2kLIgKC2sXCs4irvNT0IqYA1xGs80KO_6w_EJ5uZGgPJyp5X02dklBWM7LK_94MhjuqMQTtWhE0P8ig1_DMk9iwdHfH_ojtra66zl0HG92TgQicmUbeNrNaejnU11_OErGQvjS4~2?etext=2202.oP1E-NXI4VX-AHQbEOD_1oxhmXzRGhIU2Xg_ECR5CwhhZXRkZ3ZqZnRobmpibmRv.31a07d5897a073859323a3d70f8683d7c2a24396&from=yandex.kz%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=телевизоры&baobab_event_id=m49mp3gfei">Телевизоры</a>
+        <a href="https://yabs.yandex.kz/count/WdeejI_zOoVX2LbE0cKJ09DYXSquy5WP0Iy89jlfT3v5JA7sX9qzw9FUkVD1Thv-n-iDTxXLg_NwKnMY7YLHPmJLrXj5CuAMaAX5973Ge75ZY3fZX1qmPVC0eguG392L7e8lMr59GmmwZfukYzwLEnzOB6KwsmfHhB0OCICBgzBHwZ0rOBR2BQ09NK2O0hu2k0zabHIWVI3BLu3sWMoI0hGFPFKAqAfOWfRpDS5NOWkD91TQShf9tyWh7yB-WzTxuBBeyQcVDNMeHdrqeyP1eoP2iYezR-Sp-hHnPpxDfq_x2SsVTksCubFf7PqwRUTztrBx10xMA-cYQUsb0RuDtdYzO0zbXPs87bul6oyTm0Rk_GJE2ZkCC-DgDUpDE2uxhOOjFLLJzblUCcsDs04cVTThz0rVn0wx-BdnDT9mFSss01LmXNY61tHv8CiNm1Q3jyXM4IPDUaOGrzumQ6diiNct435oPSJ2rW5TPveXqs4LoaqUOGhR2a-uA8aXDtKi7QCtkwhK5piblY3u0jEbWQMd0qQZdf6c7etNvD9upNs4BhCV_X4q_E2RHnx_EzC6-RqpRP2VEzC6-NS1t1g_baBWbP-b47Y5QLvobp3BI-wIcIOqAcL3i6pHkyqGB5lqrc_zjEWiBUZBleXX5zYJFT_ZcTcFQGy-O3BhIPt_ak2sXEhEYziIgZklzNbCa9oT7UPAfL8fmmAQ6VQI0kLFu4dXZ80O5py16lnprl1hyJyxVcAZcCgatVjiZSwn7KOsjLLGK99rNqKlZDO2SUOQBTAjugtQMKgxe8Dmgx1J7Ifg1OETb4IBu8QkRb6bYK-Dh9PC9Zl5E5GQq6W4~2?etext=2202.dwZ5dYpWOaSQRKzAov-uBXllb2ZxZnB4bHpwb2l1cXA.cfdefb9daf9f46c1fdb52cd058e2191661577ad9&from=yandex.kz%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=часы&baobab_event_id=m49mpzejcy">Қол сағаттар</a>
+        <a href="#contact" class="contact-link" onclick="showAddress()">Контакты</a>
+        <div id="contact-address" class="contact-address"></div>
+      </div>
+    </nav>
+    <br />
+
+    <section class="products" id="smartphones">
+      <div class="bigsection">
+        <h2>Смартфоны</h2>
+        <div class="product-list">
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://object.pscloud.io/cms/cms/Photo/img_0_77_6130_0_1_Coh7Ka.webp"
+                alt="Iphone 16 pro"
+              />
+            </div>
+            <h3>IPHONE 16 PRO<br>
+              <p><strong>дисплей: 6,1 дюйма<br>
+                процессор: Apple A18<br>
+                память: 8/128 ГБ<br>
+                емкость:100%
+              </strong></p>
+            </h3>
+            <button class="buy-button">2000$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://cdn.halykmarket.kz/s3/product/pim/sku-variations/1208168220/1208168220-a336.jpg?mobileProductRegularThumbnail"
+                alt="Iphone 14 pro max"
+              />
+            </div>
+            <h3>IPHONE 14 PRO MAX<br>
+              <p><strong>дисплей: 5 дюйма<br>
+                процессор: Apple A15<br>
+                память: 8/126 ГБ<br>
+                емкость:99%
+              </strong></p></h3>
+            <button class="buy-button">1800$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://fmobile.kz/_next/image?url=https%3A%2F%2Fapi.fmobile.kz%2Fimage%2F%2Fmedia%2Fsale%2Fimage%2Fsmartfon_apple_iphone_15_pro_max_256gb_natural_titanium_mu793_274420_1%202023-10-05_09-46-41.073237%2001be698d60ed80ab09d57ba0.jpg&w=640&q=100"
+                alt="Iphone 15 pro max"
+              />
+            </div>
+            <h3>IPHONE 15 PRO MAX<br>
+              <p><strong>дисплей: 5,1 дюйма<br>
+                процессор: Apple A16<br>
+                память:12/256 ГБ<br>
+                емкость:78%
+              </strong></p></h3>
+            <button class="buy-button">1488$</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="laptops">
+      <div class="bigsection">
+        <h2>Ноутбуки</h2>
+        <div class="product-list">
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://fmobile.kz/_next/image?url=https%3A%2F%2Fapi.fmobile.kz%2Fimage%2F%2Fmedia%2Fsale%2Fimage%2F266273_1%202022-11-21_09-53-37.447029%20abe338c6e058b844aad332e9.jpg&w=640&q=100"
+                alt="MacBook Air 2022"
+              />
+            </div>
+            <h3>MacBook Air 2022<br>
+              <p><strong>дисплей: 13.6 дюйма<br>
+                процессор: Apple M2<br>
+                память: 24ГБ опер.память<br>
+                корпус: алюминиевый
+              </strong></p></h3>
+            <button class="buy-button">1500$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://fmobile.kz/_next/image?url=https%3A%2F%2Fapi.fmobile.kz%2Fimage%2F%2Fmedia%2Fsale%2Fimage%2F256815_1%202023-02-16_17-22-04.047495%2059e94c5fef04bb8a21f88112.jpg&w=256&q=100"
+                alt="MacBook Pro 14"
+              />
+            </div>
+            <h3>MacBook Pro 14<br>
+              <p><strong>дисплей: 14.2 дюйма<br>
+                процессор: 12 ядер<br>
+                память: 32 ГБ опер.память<br>
+                корпус: алюминиевый
+              </strong></p></h3>
+            <button class="buy-button">2500$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://fmobile.kz/_next/image?url=https%3A%2F%2Fapi.fmobile.kz%2Fimage%2F%2Fmedia%2Fsale%2Fimage%2F241453_1%202023-02-17_13-36-59.553082%20ad8c8b0f945358982f5f669a.jpg&w=256&q=100"
+                alt="MacBook Air Retina"
+              />
+            </div>
+            <h3>MacBook Air Retina<br>
+              <p><strong>дисплей: 13 дюйма<br>
+                процессор: Apple M1<br>
+                память: 8 ГБ опер.память<br>
+                корпус: металл
+              </strong></p></h3>
+            <button class="buy-button">1800$</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="televisions">
+      <div class="bigsection">
+        <h2>Телевизоры</h2>
+        <div class="product-list">
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=a9d5b53d4fc374d9221149cccccdb9d1_l-4236668-images-thumbs&n=13"
+                alt="Samsung TV"
+              />
+            </div>
+            <h3>Samsung TV 55<br>
+              <p><strong>дисплей: 13 дюйма<br>
+                процессор: Apple M1<br>
+                корпус: металл
+              </strong></p></h3>
+            <button class="buy-button">2000$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://cdn.halykmarket.kz/s3/product/pim/sku-variations/1207625807/33.jpg?mobileProductRegularThumbnail"
+                alt="Samsung TV"
+              />
+            </div>
+            <h3>Samsung TV 75<br>
+              <p><strong>дисплей: 13 дюйма<br>
+                процессор: Apple M1<br>
+                корпус: металл
+              </strong></p></h3>
+            <button class="buy-button">2000$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://precio.com.co/wp-content/uploads/televisores/lg/televisor-lg-43-pulgadas-43lm6300-precio-colombia.webp"
+                alt="Samsung TV"
+              />
+            </div>
+            <h3>Samsung TV<br>
+              <p><strong>дисплей: 13 дюйма<br>
+                процессор: Apple M1<br>
+                корпус: алюминиевый
+              </strong></p></h3>
+            <button class="buy-button">3000$</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="cameras">
+      <div class="bigsection">
+        <h2>Камеры</h2>
+        <div class="product-list">
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://cdn.halykmarket.kz/s3/product/pim/sku-variations/1207935821/product-1207626184-400.jpg?mobileProductRegularThumbnail"
+                alt="Sony"
+              />
+            </div>
+            <h3>Sony PXW-Z<br>
+              <p><strong>дисплей: 13 дюйма<br>
+                процессор: Apple M1<br>
+                корпус: алюминиевый
+              </strong></p></h3>
+            <button class="buy-button">9000$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://cdn.halykmarket.kz/s3/merchant/6053/334c1f2a-acab-4741-95a3-672e9c1cdf89/334c1f2a-acab-4741-95a3-672e9c1cdf89.jpg?mobileProductRegularThumbnail"
+                alt="Canon EOS 90D"
+              />
+            </div>
+            <h3>Panasonic<br>
+              <p><strong>дисплей: 13 дюйма<br>
+                процессор: Apple M1<br>
+                корпус: алюминиевый
+              </strong></p></h3>
+            <button class="buy-button">7000$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://cdn.halykmarket.kz/s3/product/pim/sku-variations/1208654440/product-1208122122-140.jpg?mobileProductRegularThumbnail"
+                alt="Canon EOS 90D"
+              />
+            </div>
+            <h3>Sony HXR-NX100<br>
+              <p><strong>дисплей: 13 дюйма<br>
+                процессор: Apple M1<br>
+                корпус: алюминиевый
+              </strong></p></h3>
+            <button class="buy-button">5000$</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="accessories">
+      <div class="bigsection">
+        <h2>Аксессуары</h2>
+        <div class="product-list">
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://avatars.mds.yandex.net/get-mpic/5116414/2a000001915dd550dca4fabe0e14e7b2b9f5/orig"
+                alt="Airpods pro 2"
+              />
+            </div>
+            <h3>Airpods Pro 2</h3>
+            <button class="buy-button">600$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://fmobile.kz/_next/image?url=https%3A%2F%2Fapi.fmobile.kz%2Fimage%2F%2Fmedia%2Fsale%2Fimage%2F233041_1%202023-05-04_12-26-24.017191%20d6cb43e924483258c0e72f83.jpg&w=256&q=100"
+                alt="Airpods Max Green"
+              />
+            </div>
+            <h3>Airpods Max Green</h3>
+            <button class="buy-button">1000$</button>
+          </div>
+          <div class="product">
+            <div class="image">
+              <img
+                src="https://fmobile.kz/_next/image?url=https%3A%2F%2Fapi.fmobile.kz%2Fimage%2F%2Fmedia%2Fsale%2Fimage%2F265483_1%202023-10-09_13-31-44.172896%2028e661d026f4d0303963aac7.jpg&w=256&q=100"
+                alt="Anker Charger"
+              />
+            </div>
+            <h3>Airpods 3rd Gen</h3>
+            <button class="buy-button">600$</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="reviews">
+      <h3>Кері байланыс</h3>
+
+      <div class="review">
+        <p><strong>Алтынбек</strong></p>
+        <div class="stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+        </div>
+        <p>Өте жақсы өнім! Сіздергеде ұсынамын.</p>
+      </div>
+
+      <div class="review">
+        <p><strong>Айша</strong></p>
+        <div class="stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <p>Өнім сапасы жақсы, бірақ жеткізу кешіктірілді.</p>
+      </div>
+
+      <div class="review">
+        <p><strong>Ернар</strong></p>
+        <div class="stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+        <p>Керемет сапа! Сатып алғаныма өте қуаныштымын.</p>
+      </div>
+
+      <div class="review">
+        <p><strong>Ерзат</strong></p>
+        <div class="stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <p>Өнім жақсы, бірақ сәл ойымдағыдай болмады.</p>
+      </div>
+
+      <div class="review">
+        <p><strong>Шапағат</strong></p>
+        <div class="stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <p>Барлығы керемет, бірақ жеткізгенде адрестен қателесу болды.</p>
+      </div>
+
+      <div class="review">
+        <p><strong>Арман</strong></p>
+        <div class="stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">☆</span>
+        </div>
+        <p>Жақсы өнім, бірақ мен түстерінен көбірек варианттар болса.</p>
+      </div>
+    </div>
+    <div class="progress-wrapper">
+      <div class="bar-container">
+        <div class="bar">
+          <div class="bar-text">100% СІЗДІҢ КӨҢІЛІҢІЗДЕН ШЫҒАТЫН САПА</div>
+          <div class="progress-bar">
+            <div class="progress">0-100%</div>
+          </div>
+        </div><br>
+      </div>
+      <div class="progress-wrapper">
+        <div class="bar-container">
+          <div class="bar">
+            <div class="bar-text">100% ТИІМДІ БАҒА</div>
+            <div class="progress-bar">
+              <div class="progress">0-100%</div>
+            </div>
+          </div><br>
+        </div>
+
+          <div class="bar-container">
+            <div class="bar">
+              <div class="bar-text">100% ЖЕТКІЗУ ҚЫЗМЕТІ</div>
+              <div class="progress-bar">
+                <div class="progress">0-100%</div>
+              </div>
+            </div><br>
+          </div>
+
+            <div class="bar-container">
+              <div class="bar">
+                <div class="bar-text">100% КЕРІ БАЙЛАНЫС</div>
+                <div class="progress-bar">
+                  <div class="progress">0-100%</div>
+                </div>
+              </div><br>
+            </div>
+
+              <div class="bar-container">
+                <div class="bar">
+                  <div class="bar-text">100% КӨҢІЛ КҮЙ СЫЙЛАУ</div>
+                  <div class="progress-bar">
+                    <div class="progress">0-100%</div>
+                  </div>
+                </div><br>
+              </div>
+      </div>
+    </div>
+    
+      <div class="feedback-form">
+        <h3>Оставьте свой отзыв</h3>
+        <form action="#">
+          <label for="name">Ваше имя:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Введите ваше имя"
+          />
+
+          <label for="email">Ваш email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Введите ваш email"
+          />
+
+          <label for="feedback">Ваш отзыв:</label>
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="4"
+            required
+            placeholder="Напишите ваш отзыв"
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Отправить отзыв</button>
+        </form>
+      </div>
+      <div class="share-container">
+        <button class="share-button" id="shareButton">🔗</button>
+        <div class="share-menu">
+          <a
+            href="https://www.facebook.com/Kaspi.kz/?business_id=161839554266442"
+            data-platform="facebook"
+            >Facebook</a
+          >
+          <a href="https://twitter.com/Kaspi_kz" data-platform="twitter"
+            >Twitter</a
+          >
+          <a
+            href="https://www.youtube.com/channel/UClatNLsHQYQ00TCT3Nfse6w"
+            data-platform="YouTube"
+            >YouTube</a
+          >
+          <a href="https://wa.me/77714872130" data-platform="whatsapp"
+            >WhatsApp</a
+          >
+          
+        </div>
+      </div>
+      <footer>&copy; 22.02.2007 | Базарбай Жаннұр Мархабатұлы | Қаныш Имантайұлы Сәтпаев</footer>
+  
+    <script>
+      const cartBtn = document.querySelector(".cart-btn");
+      const cartItems = document.querySelector(".cart-items");
+
+      cartBtn.addEventListener("click", function () {
+        cartItems.style.display =
+          cartItems.style.display === "block" ? "none" : "block";
+      });
+      function showAddress() {
+        var addressDiv = document.getElementById("contact-address");
+        addressDiv.style.display = "block"; 
+        addressDiv.textContent = "Адрес на карте: Алматы, Казахстан, SU университеті";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+    const progressBars = document.querySelectorAll(".progress-bar");
+    const colors = ["matte green", "blue", "lime", "yellow", "red", "orange"];
+
+    progressBars.forEach((progressBar, index) => {
+        let animationFrame;
+        let progress = 0; // сохраняет текущий прогресс
+
+        const color = colors[index % colors.length];
+        progressBar.querySelector(".progress").style.backgroundColor = color;
+
+        const startProgress = () => {
+            if (progress < 100) {
+                progress += 0.5;
+                progressBar.querySelector(".progress").style.width = `${progress}%`;
+                animationFrame = requestAnimationFrame(startProgress);
+            }
+        };
+
+        const stopProgress = () => {
+            cancelAnimationFrame(animationFrame);
+            // Прогресс остаётся неизменным
+        };
+
+        progressBar.addEventListener("mouseenter", startProgress);
+        progressBar.addEventListener("mouseleave", stopProgress);
+    });
+});
+    </script>
+  </body>
+</html>
